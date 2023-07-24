@@ -4,9 +4,28 @@
   "description": "Clearbit API client",
   "main": "index.js",
   "scripts": {
+    "lint": "tsc",
+    "build": "pnpm run lint && tsup src/index.ts --format cjs,esm --dts",
+    "release": "pnpm run build && changeset publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["Clearbit", "API", "client", "rest-client"],
+  "keywords": [
+    "Clearbit",
+    "API",
+    "client",
+    "rest-client"
+  ],
   "author": "fr33m0nk",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@billjs/query-string": "^1.0.2",
+    "@effect/schema": "^0.30.2",
+    "effect": "2.0.0-next.19"
+  }
 }
