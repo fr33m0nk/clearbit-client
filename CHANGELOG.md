@@ -1,5 +1,11 @@
 # @fr33m0nk/clearbit-client
 
+## 2.0.2
+
+### Patch Changes
+
+- 269ee7b: Updates example in README to ommit error typecast
+
 ## 2.0.1
 
 ### Patch Changes
