@@ -1,6 +1,6 @@
 {
   "name": "@fr33m0nk/clearbit-client",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Clearbit API client",
   "private": false,
   "main": "./dist/index.js",
