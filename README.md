@@ -10,7 +10,7 @@
 ### [Combined query (Person + Company) API](https://dashboard.clearbit.com/docs#enrichment-api-combined-api)
 
 ```typescript
-import {combinedQuery, CombinedQueryParams, PersonAndCompany, APIError} from "./index";
+import {combinedQuery, CombinedQueryParams, PersonAndCompany} from "./index";
 
 const queryParams: CombinedQueryParams = {email: "some@one.com"}
 
@@ -18,7 +18,7 @@ combinedQuery("API_KEY")(queryParams).then((r: PersonAndCompany) => {
   console.log("\n Yay Combined Search\n")
   console.log(r)
   console.log("\n ------- \n")[company.ts](src%2Fschema%2Fcompany.ts)
-}).catch((error: APIError) => {
+}).catch((error) => {
   console.log("\n Nay Combined Search\n")
   console.log(error)
 })
