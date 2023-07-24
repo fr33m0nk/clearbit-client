@@ -2,7 +2,9 @@
   "name": "clearbit-client",
   "version": "0.0.1",
   "description": "Clearbit API client",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "tsc",
     "build": "pnpm run lint && tsup src/index.ts --format cjs,esm --dts",
