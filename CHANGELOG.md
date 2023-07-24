@@ -1,5 +1,11 @@
 # @fr33m0nk/clearbit-client
 
+## 2.0.1
+
+### Patch Changes
+
+- 3b611f6: Corrects repo link in `README.md`
+
 ## 2.0.0
 
 ### Major Changes
