@@ -1,0 +1,12 @@
+{
+  "name": "clearbit-client",
+  "version": "1.0.0",
+  "description": "Clearbit API client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Clearbit", "API", "client", "rest-client"],
+  "author": "fr33m0nk",
+  "license": "MIT"
+}
