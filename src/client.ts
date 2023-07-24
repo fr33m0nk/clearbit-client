@@ -45,16 +45,16 @@ const toURLWithQueryString: ToURLWithQueryString = (url, queryParams) => {
     return new URL(url.concat(stringify(queryParams)))
 }
 
-type ToOAuthHeader = (authToken: string) => { readonly Authorization: string}
+type ToOAuthHeader = (authToken: string) => { readonly Authorization: string }
 const toOAuthHeader: ToOAuthHeader = authToken => ({
     Authorization: `Bearer ${authToken}`
 })
 
-type FetchClearbitApi = (authToken:string, queryURL: string, queryParams: QueryParams) => Effect.Effect<never, FetchError, Response>
+type FetchClearbitApi = (authToken: string, queryURL: string, queryParams: QueryParams) => Effect.Effect<never, FetchError, Response>
 const fetchClearbitApi: FetchClearbitApi = (authToken, queryURL, queryParams) => fetchApi(
-    toURLWithQueryString(queryURL, queryParams),{
-        headers: toOAuthHeader(authToken)
-    }
+    toURLWithQueryString(queryURL, queryParams), {
+    headers: toOAuthHeader(authToken)
+}
 )
 
 type CombinedApi = (authToken: string) => (queryParams: CombinedQueryParams) => Effect.Effect<never, APIError, PersonAndCompany>

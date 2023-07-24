@@ -8,4 +8,4 @@ export {
     CombinedQuery, personQuery,
     PersonQueryParams, PersonQuery,
     companyQuery, CompanyQueryParams, CompanyQuery
-  } from './client'
+} from './client'
