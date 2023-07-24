@@ -1,4 +1,4 @@
-# [Clearbit Client (Typescript/Javascript)](https://github.com/fr33m0nk/ts-clearbit-client)
+# [Clearbit Client (Typescript/Javascript)](https://github.com/fr33m0nk/clearbit-client)
 
 - This client library supports the latest `v2` API for Clearbit
 - This client uses [Effect](https://www.effect.website/) library. Effect is definitely worth looking into.
