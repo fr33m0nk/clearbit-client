@@ -5,11 +5,11 @@ import { ParseError } from '@effect/schema/ParseResult'
 import { Either } from 'effect/Either'
 
 const combinedSchema = Schema.struct({
-    person: Schema.nullable(personSchema),
-    company: Schema.nullable(companySchema)
-  })
-  
-  export type PersonAndCompany = Schema.To<typeof combinedSchema>
+  person: Schema.nullable(personSchema),
+  company: Schema.nullable(companySchema)
+})
 
-  type CombinedResponseParser = (rawJson: any) => Either<ParseError, PersonAndCompany>
-  export const combinedResponseParser: CombinedResponseParser = Schema.parseEither(combinedSchema)
+export type PersonAndCompany = Schema.To<typeof combinedSchema>
+
+type CombinedResponseParser = (rawJson: any) => Either<ParseError, PersonAndCompany>
+export const combinedResponseParser: CombinedResponseParser = Schema.parseEither(combinedSchema)
