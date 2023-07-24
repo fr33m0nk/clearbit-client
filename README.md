@@ -27,7 +27,7 @@ combinedQuery("API_KEY")(queryParams).then((r: PersonAndCompany) => {
 ### [Person query API](https://dashboard.[company.ts](src%2Fschema%2Fcompany.ts)clearbit.com/docs#enrichment-api-person-api)
 
 ```typescript
-import {personQuery, PersonQueryParams, Person, APIError} from "./index";
+import {personQuery, PersonQueryParams, Person} from "./index";
 
 const queryParams: PersonQueryParams = {email: "some@one.com"}
 
@@ -35,7 +35,7 @@ personQuery("API_KEY")(queryParams).then((r: Person) => {
   console.log("\n Yay Person Search \n")
   console.log(r)
   console.log("\n ------- \n")
-}).catch((error: APIError) => {
+}).catch((error) => {
   console.log("\n Nay Person Search \n")
   console.log(error)
 })
@@ -44,7 +44,7 @@ personQuery("API_KEY")(queryParams).then((r: Person) => {
 ### [Company query API](https://dashboard.clearbit.com/docs#enrichment-api-company-api)
 
 ```typescript
-import {companyQuery, CompanyQueryParams, Company, APIError} from "./index";
+import {companyQuery, CompanyQueryParams, Company} from "./index";
 
 const companyQueryParams: CompanyQueryParams = {domain: "google.com"}
 
@@ -52,7 +52,7 @@ companyQuery("API_KEY")(companyQueryParams).then((r: Company) => {
   console.log("\n Yay Company Search \n")
   console.log(r)
   console.log("\n ------- \n")
-}).catch((error: APIError) => {
+}).catch((error) => {
   console.log("\n Nay Company Search \n")
   console.log(error)
 })
