@@ -17,7 +17,7 @@ const queryParams: CombinedQueryParams = {email: "some@one.com"}
 combinedQuery("API_KEY")(queryParams).then((r: PersonAndCompany) => {
   console.log("\n Yay Combined Search\n")
   console.log(r)
-  console.log("\n ------- \n")[company.ts](src%2Fschema%2Fcompany.ts)
+  console.log("\n ------- \n")
 }).catch((error) => {
   console.log("\n Nay Combined Search\n")
   console.log(error)
