@@ -1,5 +1,11 @@
 # @fr33m0nk/clearbit-client
 
+## 2.0.3
+
+### Patch Changes
+
+- 8926420: Corrects typo in README.md
+
 ## 2.0.2
 
 ### Patch Changes
